@@ -39,22 +39,10 @@ $ rake active_admin_editor:install:migrations
 $ rake db:migrate
 ```
 
-And install the wysiwyg css file:
+And finally install the wysiwyg css file:
 
 ```bash
 $ rails g active_admin:editor
-```
-
-Finally add Rack::RawUpload gem and use it in application.rb:
-
-```ruby
-# Gemfile
-gem 'rack-raw-upload'
-```
-
-```ruby
-# config/application.rb
-config.middleware.use 'Rack::RawUpload'
 ```
 
 ## Usage
